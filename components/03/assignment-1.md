@@ -16,9 +16,9 @@ De kan ge dig en start att utgå ifrån och av någon anledning har de lagt file
 
 ```console
 # Ställ dig i kursroten
-$ mkdir -p public/js/modules/kmom03
-$ cp example/rainbow/info.js public/js/modules/kmom03/
-$ cp example/rainbow/logo.png public/js/img/
+$ mkdir -p me/public/js/modules/kmom03
+$ cp example/rainbow/info.js me/public/js/modules/kmom03/
+$ cp example/rainbow/logo.png me/public/js/img/
 ```
 
 Kikar vi i info.js ser vi att det är en modul som exporterar tre arrayer, `colors`, `persons` och `years`. Det gäller nu att använda dem och snickra ihop en sida som uppfyller kraven nedan.
