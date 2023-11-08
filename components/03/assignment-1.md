@@ -6,7 +6,7 @@ Du bygger vidare på din sida i `public/`.
 
 ### Förutsättning
 
-Det förutsätts att du gått igenom artiklarna för [kursmoment 03](../../articles/kmom03). De ger dig koll på hur vi börjar jobba med JavaScript och webbläsaren.
+Det förutsätts att du gått igenom artiklarna för [kursmoment 03](.). De ger dig koll på hur vi börjar jobba med JavaScript och webbläsaren.
 
 ### Intro
 
@@ -42,7 +42,7 @@ $ npm run jsdoc --what=public
 
 ### Extra uppgift (Optionell)
 
-1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten? 
+1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten?
 
 <!-- 1. Du kanske till och med kan göra ett memoryspel av korten? Om du väljer detta krav så kan du anpassa grundkraven efter ditt memoryspel. Du kan tex ändra hur eventlyssnarna fungerar och knappen kan tas bort. Du ska dock använda informationen ifrån arrayerna. -->
 
