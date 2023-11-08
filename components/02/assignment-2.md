@@ -28,7 +28,7 @@ $ cp example/animals/animals.js me/public/js/modules/kmom02/
 
 4. Skapa en modul `modules/kmom02/greeting.js`. Där exporterar du en funktion som returnerar "God förmiddag" eller "God eftermiddag" beroende på om klockan är före eller efter `12.00`. Använd modulen i `kmom02.js` och skriv ut resultatet i valfritt htmlelement på din sida.
 
-5. Dokumentera JavaScriptkoden med JSDoc.
+5. Generera JSDoc med scriptet `npm run jsdoc --what=public`
 
 6. Kör `dbwebb test kmom02` för att se så att filerna ligger på rätt plats.
 
