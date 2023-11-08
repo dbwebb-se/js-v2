@@ -54,7 +54,7 @@ Se till så koden validerar:
 $ cd me
 $ npm run eslint --what=public
 $ npm run stylelint --what=public
-$ npm run htmlhnt --what=public
+$ npm run htmlhint --what=public
 ```
 
 ### Avslutningsvis
