@@ -6,7 +6,7 @@ Du jobbar i mappen `kmom02/`.
 
 ### Förutsättning
 
-Det förutsätts att du gått igenom artiklarna för [kursmoment 02](../../articles/kmom02).
+Det förutsätts att du gått igenom artiklarna för [kursmoment 02](../).
 
 ### Intro
 
