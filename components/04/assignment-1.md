@@ -9,6 +9,8 @@ Det förutsätts att du gått igenom artiklarna för [kursmoment 04](.) samt är
 
 Till det här kursmomentet är spellistan [Kom igång med js HT23](https://www.youtube.com/watch?v=3Ht9L_9mB6M&list=PLKtP9l5q3ce8v_z6kLJsIfCJNP4zEtd9c) relevant.
 
+Vi har även i tidigare kursmoment gått igenom hur vi lägger till element, positionerar element och jobbar med eventlyssnare.
+
 ### Intro
 
 Din förra uppgift blev så bra och höll den kvalitét som "eQuality" vill utstråla. Användarna tyckte mycket om att interagera med webbsidan och har nu önskat en version till. Fast med mer fokus på tangentbordevents och former.
@@ -114,7 +116,7 @@ Koppla eventhanterare till `#box1`.
 
 Om man nu klickar på objektet skall dess outline omväxlande visas och försvinna.
 
-Tips. `Element.classlist`, `EventTarget.addEventListener`.
+Tips. `Element.classlist`, `event.target.addEventListener`.
 
 ##### 2.3 Fånga ett dubbelklick-event
 
@@ -204,7 +206,7 @@ Skapa händelser för piltangenterna så att man kan flytta valda element till h
 
 #### 4. Gör en egen händelse
 
-Gör en egen valfri händelse. Beskriv din händelse i redovisningstexten och berättar vad du gjort och hur du löste det. Glöm inte att meddela hur eventet triggas.
+Gör en egen valfri händelse. Skriv i consolen hur eventet triggas.
 
 Det kan vara enkelt eller utmanande, välj en rimlig nivå.
 
@@ -212,7 +214,7 @@ Det kan vara enkelt eller utmanande, välj en rimlig nivå.
 
 ```console
 $ cd me
-$ npm run jsdoc --kmom=kmom04
+$ npm run jsdoc --what=kmom04
 ```
 
 ### Extra uppgift (Optionell)
@@ -229,23 +231,10 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run linter kmom04/
+$ npm run eslint --what=kmom04
+$ npm run stylelint --what=kmom04
+$ npm run htmlhint --what=kmom04
 ```
-
-### Webpack
-
-Packa ihop koden innan publicering:
-
-```console
-$ npm run build --kmom=kmom04
-```
-
-<!--
-### Hur kan det se ut när det är klart?
-
-Nedan är en video som visar hur det kan se ut när det är klart:
-
-[![js exercise kmom04](https://img.youtube.com/vi/3kN-6TO5dC4/0.jpg)](https://www.youtube.com/watch?v=3kN-6TO5dC4) -->
 
 ### Avslutningsvis
 

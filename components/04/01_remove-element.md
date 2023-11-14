@@ -6,17 +6,17 @@ För att radera element kan vi använda funktionen `Node.removeChild()` eller he
 Vi utgår ifrån vår [sandbox](../../example/sandbox).
 
 ```js
-const myContent = document.getElementById('content');
+const myContent = document.getElementById('content')
 
-myContent.innerHTML = '<h3>This is a template!</h3>';
+myContent.innerHTML = '<h3>This is a template!</h3>'
 
 myContent.addEventListener('click', function (event) {
-    const clickedElement = event.target;
+    const clickedElement = event.target
 
     // using removeChild()
-    clickedElement.parentNode.removeChild(clickedElement);
+    clickedElement.parentNode.removeChild(clickedElement)
 
     // using remove()
-    clickedElement.remove();
+    clickedElement.remove()
 })
 ```
