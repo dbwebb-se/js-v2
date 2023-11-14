@@ -9,7 +9,7 @@ Det förutsätts att du gått igenom artiklarna för [kursmoment 04](.) samt är
 
 Till det här kursmomentet är spellistan [Kom igång med js HT23](https://www.youtube.com/watch?v=3Ht9L_9mB6M&list=PLKtP9l5q3ce8v_z6kLJsIfCJNP4zEtd9c) relevant.
 
-Vi har även i tidigare kursmoment gått igenom hur vi lägger till element, positionerar element och jobbar med eventlyssnare.
+Vi har även i tidigare kursmoment gått igenom hur vi lägger till element, positionerar element och jobbar med eventlyssnare. Det är en förutsättning att ha jobbat igenom kursmoment 02 och 03.
 
 ### Intro
 
@@ -18,15 +18,15 @@ Din förra uppgift blev så bra och höll den kvalitét som "eQuality" vill utst
 
 ### Krav
 
-Du jobbar i mappen `public/`. Om du vill kan du använda en ny .css-fil i uppgiften.
+Du jobbar i mappen `public/`. Dela upp koden i relevanta moduler. När uppgiften är klar ska du använd minst två moduler.
 
 #### 0. Struktur
 
 1. Skapa filen `public/kmom04.html` och lägg till menyvalet i navbaren likt tidigare.
 
-2. Skapa mappen `public/js/modules/kmom04` och lägg dina moduler däri.
+2. Skapa mappen `public/js/modules/kmom04/` och lägg dina moduler däri.
 
-3. Skapa filen `public/js/kmom04.js` och läs in de i `kmom04.html`. Det är "startfilen" för din JavaScript.
+3. Skapa filen `public/js/kmom04.js` och läs in den i `kmom04.html`. Det är "startfilen" för din JavaScript.
 
 
 #### 1. Storlekar och position
