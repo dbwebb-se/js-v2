@@ -4,7 +4,7 @@
 
 declare -a files=(
     "public/jsdoc/index.html"
-    "public/index.html"
+    "public/kmom03.html"
     "public/js/kmom03.js"
     "public/js/modules/kmom03/info.js"
     )

@@ -7,6 +7,7 @@ declare -a files=(
     "kmom02/kmom02.js"
     "kmom02/jsdoc/index.html"
     "public/index.html"
+    "public/kmom02.html"
     "public/js/kmom02.js"
     "public/js/modules/kmom02/animals.js"
     "public/js/modules/kmom02/greeting.js"
@@ -29,7 +30,7 @@ checkIfFilesExist "${files[@]}"
 
 # cp "kmom02.test.js" "$KMOMPATH/" && npm run test --what=kmom02
 # rm "$KMOMPATH/kmom02.test.js"
-# if [[ "$4" = "animals" ]]; then 
+# if [[ "$4" = "animals" ]]; then
 #     cp "kmom02_main.mjs" "$KMOMPATH/" && node "$KMOMPATH/kmom02_main.mjs"
 # fi
 
