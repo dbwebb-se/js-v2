@@ -2,36 +2,30 @@
 
 I den här uppgiften tränar vi mer på manipuleringen av dom. Vi ska bygga vidare (eller bygga om) föregående uppgift och lägga till fler events och manipulera elementen på sidan.
 
-Du jobbar i mappen `kmom04/`.
 
 ### Förutsättning
 
-Det förutsätts att du gått igenom artiklarna för [kursmoment 04](../../articles/kmom04) samt är det en fördel om du gjort tidigare kursmoment. De ger dig koll på hur vi börjar jobba med JavaScript och webbläsaren.
+Det förutsätts att du gått igenom artiklarna för [kursmoment 04](.) samt är det en fördel om du gjort tidigare kursmoment. De ger dig koll på hur vi börjar jobba med JavaScript och webbläsaren.
+
+Till det här kursmomentet är spellistan [Kom igång med js HT23](https://www.youtube.com/watch?v=3Ht9L_9mB6M&list=PLKtP9l5q3ce8v_z6kLJsIfCJNP4zEtd9c) relevant.
 
 ### Intro
 
-Din förra uppgift blev så bra och höll den kvalitét som "eQuality" vill utstråla. Användarna tyckte mycket om att interagera med webbsidan och har nu önskat en version till. Fast med mer fokus på tangentbordevents.
+Din förra uppgift blev så bra och höll den kvalitét som "eQuality" vill utstråla. Användarna tyckte mycket om att interagera med webbsidan och har nu önskat en version till. Fast med mer fokus på tangentbordevents och former.
 
-De vill även att uppgiften ska byggas ihop med något som heter "webpack" för att hålla ned mängden data som behöver skickas.
-
-Du utgår ifrån din sandbox och har såklart tillgång till tidigare uppgifter att hämta kod från.
-
-```console
-# Stå i kursmappen
-$ cp -r example/sandbox/* me/kmom04/
-```
-
-Dubbelkolla även filen `package.json` och se till så du har webpack installerat.
 
 ### Krav
 
-#### 0. Miljön
+Du jobbar i mappen `public/`. Om du vill kan du använda en ny .css-fil i uppgiften.
 
-1. Se till så du har fungerande script i package.json för att bygga applikationen med webpack, både `dev` och `prod`.
+#### 0. Struktur
 
-1. Dina källfiler har du i mappen `js/`.
+1. Skapa filen `public/kmom04.html` och lägg till menyvalet i navbaren likt tidigare.
 
-1. Du ska använda ES moduler. Läs igenom hela uppgiften och fundera på vilka moduler som passar och skaffa en grundtanke för upplägget.
+2. Skapa mappen `public/js/modules/kmom04` och lägg dina moduler däri.
+
+3. Skapa filen `public/js/kmom04.js` och läs in de i `kmom04.html`. Det är "startfilen" för din JavaScript.
+
 
 #### 1. Storlekar och position
 
@@ -90,7 +84,7 @@ Avsluta med att skapa en funktion som hjälper dig att skriva ut följande via `
 
 <!-- Tips. Studera exemplet [`example/getSize/` i kursrepot](js/repo/example/getSize) -->
 
-Tips. Använd följande för att hämta detaljer om ett objekt: `Window.getComputedStyle()`, `parseInt()`.
+Tips. Använd följande för att hämta detaljer om ett objekt: `window.getComputedStyle()`, `parseInt()`.
 
 Tips. Dela upp din kod i små funktioner. Var flitigt med att använda `console.log()` när du hamnar i bekymmer.
 
