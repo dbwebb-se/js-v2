@@ -33,7 +33,7 @@ Du jobbar i mappen `public/`. Dela upp koden i relevanta moduler. När uppgiften
 
 ##### 1.1 Placera ut en röd låda
 
-Skapa en låda på din sida: `<div id="box1" class="box center red size200"></div>` i filen `index.html`, positionera ut den med absolut positionering i centrum av webbsidans fönster.
+Skapa en låda på din sida: `<div id="box1" class="box center red size200"></div>` i filen `kmom04.html`, positionera ut den med absolut positionering i centrum av webbsidans fönster.
 
 Sätt följande i stylesheeten:
 
