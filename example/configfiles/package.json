@@ -6,12 +6,12 @@
   "scripts": {
     "test": "npx mocha ./$npm_config_what",
     "http-server": "npx http-server -p 9001",
-    "htmlhint": "npx htmlhint ./$npm_config_what -f compact|| exit 0",
+    "htmlhint": "npx htmlhint --ignore='**/jsdoc/**' ./$npm_config_what -f compact|| exit 0",
     "stylelint": "npx stylelint \"./$npm_config_what/**/*.css\" --aei || exit 0",
     "stylelint:fix": "npx stylelint --fix \"./$npm_config_what/**/*.css\" || exit 0",
     "eslint": "npx eslint ./$npm_config_what || exit 0",
     "eslint:fix": "npx eslint ./$npm_config_what --fix || exit 0",
-    "lint": "npm run htmlhint && npm run stylelint && npm run eslint",
+    "lint": "npm run htmlhint --ignore='**/jsdoc/**' && npm run stylelint && npm run eslint",
     "jsdoc": "npx jsdoc -c .jsdoc.json -d $npm_config_what/jsdoc $npm_config_what/* || exit 0",
     "clean": "rm -rf build/",
     "clean-all": "npm run clean && rm -rf node_modules/ && rm -f package-lock.json"
