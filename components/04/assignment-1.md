@@ -214,7 +214,7 @@ Det kan vara enkelt eller utmanande, välj en rimlig nivå.
 
 ```console
 $ cd me
-$ npm run jsdoc --what=kmom04
+$ npm run jsdoc --what=public
 ```
 
 ### Extra uppgift (Optionell)
@@ -231,10 +231,13 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run eslint --what=kmom04
-$ npm run stylelint --what=kmom04
-$ npm run htmlhint --what=kmom04
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
 ```
+
+Tips: Kör `dbwebb test kmom04` för att se så att filerna ligger på rätt plats.
+
 
 ### Avslutningsvis
 
