@@ -8,7 +8,7 @@
 #   $COURSE_REPO
 #
 
-cd me || exit
+pwd || exit
 
 e() { exit; }; export -f e
 
