@@ -2,11 +2,9 @@ Hej,
 
 Den här veckan har det handlat om eventlyssnare, DOM, HTML och lite CSS. Jag hoppas kursmomentet gav dig en insikt i hur vi kan manipulera DOM på olika sätt.
 
-Jag har tittat på Rainbowuppgiften och dess kod och jag tycker du har löst det på ett fint sätt. Bra indelning i funktioner och det är lätt att följa koden och vad den gör.
+Jag har tittat på Rainbowuppgiften och dess kod och jag tycker du har löst det på ett fint sätt. 
 
-Koden passerar även eslint och dokumentationen finns på plats.
-
-Bra att du fick in JavaScripten i me sidan också.
+Koden passerar även validatorerna och dokumentationen finns på plats.
 
 Mycket bra jobbat med uppgifterna, det är bara att köra vidare!
 

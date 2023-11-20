@@ -1,11 +1,9 @@
 Hej,
 
-Här var det några nya tekniker som vi lärt oss. Webpack är ju ett bra sätt att packa ihop sin kod inför produktion. Det blir snyggt och prydligt. Vi har även fått gräva ner oss ordentligt i DOM trädet och manipulerat diverse former och element.
+Vi har fått gräva ner oss ordentligt i DOM trädet och manipulerat diverse former och element.
 
-Allt passerar validatorn och finns på rätt plats.
+Allt passerar validatorerna och ligger på rätt plats.
 Jag har tittat igenom DOM uppgiften och den har du löst fint. Jag tittade i koden och där har du delat upp det bra i mindre funktioner som går att återanvända och är dokumenterade, mycket stiligt.
-
-Jag kunde även flytta på formen på me sidan.
 
 Väl jobbat med kursmomentet! Kör så det ryker med Web API.
 
