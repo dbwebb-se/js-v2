@@ -9,6 +9,6 @@ cd me || exit 1
 header "OPENING FILES IN VSCode"
 code public
 
-header "OPEN ASSIGNMENT IN BROWSER"
-url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM"
-eval "$BROWSER" "$url" &
+# header "OPEN ASSIGNMENT IN BROWSER"
+# url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM"
+# eval "$BROWSER" "$url" &

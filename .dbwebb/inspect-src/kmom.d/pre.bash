@@ -18,7 +18,7 @@ printf ">>> -------------- Pre (all kmoms) ----------------------\n"
 # eval "$BROWSER" "http://127.0.0.1:1337/eshop/index" &
 
 # Open me/kmom01/redovisa
-url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/$REDOVISA_HTTP_POSTFIX"
+url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/public"
 printf "$url\n" 2>&1
 eval "$BROWSER" "$url" &
 
