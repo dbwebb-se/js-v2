@@ -27,12 +27,12 @@ Oavsett vilken mekanism vi använder för att lagra datan har vi tillgång till 
 
 ```js
 // Set items
-window.localStorage.setItem('name', 'Murphy');
-window.localStorage.profession = `Stormtrooper`;
+window.localStorage.setItem('name', 'Murphy')
+window.localStorage.profession = `Stormtrooper`
 
 // Get items
-const name = window.localStorage.getItem('name');
-const profession = window.localStorage.profession;
+const name = window.localStorage.getItem('name')
+const profession = window.localStorage.profession
 ```
 
 Vi kan se att det finns två funktioner som hjälper oss men vi kan även peta på det med nyckel/värde.
@@ -40,12 +40,12 @@ Vi kan se att det finns två funktioner som hjälper oss men vi kan även peta p
 Behöver vi radera datan finns även där en funktion till hjälp:
 
 ```js
-let myStore = window.localStorage;
+let myStore = window.localStorage
 
-myStore.setItem('tomato', "45");
+myStore.setItem('tomato', "45")
 
 // Clears all data from storage
-myStore.clear();
+myStore.clear()
 ```
 
 Du kan se ett exempel på Web Storage i [exempelmappen](../../example/webstorage).

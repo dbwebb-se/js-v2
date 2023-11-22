@@ -18,28 +18,30 @@ I din exempelmapp finns [tre filer](../../example/co2-json) med färdigextrahera
 
 Datan innehåller en hel del nycklar och värden och du kan se en lista på dem i [owid's gitrepo](https://github.com/owid/co2-data/blob/master/owid-co2-codebook.csv).
 
-Du utgår ifrån din sandbox och har tillgång till tidigare uppgifter att hämta kod från.
-
-```console
-# Ställ dig i kursmappen
-$ cp -r example/sandbox/* me/kmom05/
-```
+Du Jobbar vidare i `me/public/` likt tidigare kursmoment.
 
 Bra. Då har du nog allt du behöver för att gå igenom kraven.
 
 ### Krav
 
-1. Bygg applikationen likt föregående kursmoment med mappstrukturen och webpack.
+1. Skapa filerna `kmom05.html`, `js/kmom05.js` samt mappen `js/modules/kmom05`. I mappen lägger du de moduler du skapar för kursmomentet.
 2. Användaren ska via ett `select` element och en eventlyssnare kunna hämta data från alla filer.
 3. Filerna ska hämtas med fetch API.
 4. Man ska bara kunna välja år mellan `1900` och `2019`.
 5. Datan ska presenteras i en tabell med minst sex kolumner.
 6. Välj ut minst tre värden som ska jämföras och vinnarens cell ska markeras, tex grön bakgrundsfärg.
-7. Kommentera din kod enligt JSDoc och generera dokumentationen:
+7. Skapa en "highscorelista" med hjälp av SessionStorage. 
+  * Spara undan vilket land som fick bäst resultat varje år man filterar på. 
+  * Presentera datan på sidan. 
+  * Datan ska vara kvar om man laddar om sidan.
+  * Lägg till en knapp som rensar SessionStorage och laddar om sidan.
+
+8. Fundera ut vilken funktionalitet som bör finnas i `kmom05.js` eller i moduler. När du är klar ska du ha minst en modul.
+9. Kommentera din kod enligt JSDoc och generera dokumentationen:
 
 ```console
 $ cd me
-$ npm run jsdoc --kmom=kmom05
+$ npm run jsdoc --kmom=public
 ```
 
 ### Extra uppgift (Optionell)
@@ -53,17 +55,10 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run linter kmom05/
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
 ```
-
-### Webpack
-
-Packa ihop koden innan publicering:
-
-```console
-$ npm run build --kmom=kmom05
-```
-
 
 ### Avslutningsvis
 

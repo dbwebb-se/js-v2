@@ -11,10 +11,10 @@ Du kan se hur det fungerar i [exempelmappen](../../example/fetch). Det mest intr
 fetch(`https://url-to-a-file`)
     .then(response => response.json())
     .then(function (json) {
-        console.log(json);
+        console.log(json)
     })
 
-console.log('I get printed before the data...');
+console.log('I get printed before the data...')
 ```
 
 Om vi jämför med till exempel `setTimeout` så vet vi att all kod kommer exekveras vid inläsning och då behöver ju datan finnas. Vi kan vänta på ett Promise och jobba med datan med hjälp av funktionen `.then()`. Koden däri kommer exekveras vid rätt tillfälle, när datan är klar. Det kommer vara viktigt för uppgiften i detta kursmoment att ha koll på. Vill du se mer om Promise finns det i [exempelmappen](../../example/promise).
@@ -23,7 +23,7 @@ Om vi tittar på koden ovan så i första delen: `.then(response => response.jso
 
 ```js
 .then(function (json) {
-    console.log(json);
+    console.log(json)
 })
 ```
 
