@@ -2,11 +2,9 @@ Hej!
 
 Nu kan vi lägga till fler verktyg till vår ryggsäck. Både Web storage och Fetch. Vi har även lärt oss lite mer om asynkron/synkron programmering och hur vi kan använda inbyggda funktioner för att styra exekveringen.
 
-Koden passerar eslint.
+Koden passerar validatorerna.
 
 Jag har tittat på "co2 emission" uppgiften och allt fungerar och visas i rätt ordning. Jag kunde välja årtal och tabellen uppdaterades och markerade rätt celler.
-
-Jag testade ditt spel också och det rullade på bra.
 
 Snyggt jobbat med kursmomentet. Kör vidare med Hangman!
 

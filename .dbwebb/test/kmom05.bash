@@ -3,10 +3,9 @@
 . "functions.bash"
 
 declare -a files=(
-    "js/main.js"
-    "dist/bundle.js"
-    "jsdoc/index.html"
-    "../redovisa/index.html"
+    "public/jsdoc/index.html"
+    "public/kmom05.html"
+    "public/js/kmom05.js"
     )
 
 # Print the header for the testsuite
