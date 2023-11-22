@@ -27,17 +27,18 @@ Bra. Då har du nog allt du behöver för att gå igenom kraven.
 1. Skapa filerna `kmom05.html`, `js/kmom05.js` samt mappen `js/modules/kmom05`. I mappen lägger du de moduler du skapar för kursmomentet.
 2. Användaren ska via ett `select` element och en eventlyssnare kunna hämta data från alla filer.
 3. Filerna ska hämtas med fetch API.
-4. Man ska bara kunna välja år mellan `1900` och `2019`.
-5. Datan ska presenteras i en tabell med minst sex kolumner.
-6. Välj ut minst tre värden som ska jämföras och vinnarens cell ska markeras, tex grön bakgrundsfärg.
-7. Skapa en "highscorelista" med hjälp av SessionStorage. 
+4. Använd async/await för att invänta datan.
+5. Man ska bara kunna välja år mellan `1900` och `2019`.
+6. Datan ska presenteras i en tabell med minst sex kolumner.
+7. Välj ut minst tre värden som ska jämföras och vinnarens cell ska markeras, tex grön bakgrundsfärg.
+8. Skapa en "highscorelista" med hjälp av SessionStorage. 
   * Spara undan vilket land som fick bäst resultat varje år man filterar på. 
   * Presentera datan på sidan. 
   * Datan ska vara kvar om man laddar om sidan.
   * Lägg till en knapp som rensar SessionStorage och laddar om sidan.
 
-8. Fundera ut vilken funktionalitet som bör finnas i `kmom05.js` eller i moduler. När du är klar ska du ha minst en modul.
-9. Kommentera din kod enligt JSDoc och generera dokumentationen:
+9. Fundera ut vilken funktionalitet som bör finnas i `kmom05.js` eller i moduler. När du är klar ska du ha minst en modul.
+10. Kommentera din kod enligt JSDoc och generera dokumentationen:
 
 ```console
 $ cd me
@@ -47,6 +48,7 @@ $ npm run jsdoc --kmom=public
 ### Extra uppgift (Optionell)
 
 1. Ta med mer data i tabellen och lägg till i jämförelsen. Kanske kan man markera det land som "kom sist" varje år också?
+2. Kanske lägga till en "loading gif" i stil med [den här](https://commons.wikimedia.org/wiki/File:Loading_icon.gif). Eller en annan. Välj själv.
 <!-- 1. Implementera cachning av datan så du inte hämtar den mer än en gång. -->
 
 ### Validering
