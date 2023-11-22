@@ -2,11 +2,11 @@
 
 I den här uppgiften ska vi använda data utifrån. Datan hämtas via http-protokollet med hjälp av fetch och vi ska använda datan för att populera en tabell.
 
-Du jobbar i mappen `kmom05/`.
+Du jobbar i mappen `public/`.
 
 ### Förutsättning
 
-Det förutsätts att du gått igenom artiklarna för [kursmoment 05](../../articles/kmom05) samt är det en fördel om du gjort tidigare kursmoment. De ger dig koll på hur vi börjar jobba med JavaScript och webbläsaren.
+Det förutsätts att du gått igenom artiklarna för [kursmoment 05](.) samt är det en fördel om du gjort tidigare kursmoment. De ger dig koll på hur vi börjar jobba med JavaScript och webbläsaren.
 
 ### Intro
 
@@ -17,8 +17,6 @@ Som av en händelse har de hittat data de vill att du använder från "[Our Worl
 I din exempelmapp finns [tre filer](../../example/co2-json) med färdigextraherad data. Då det inte går att hämta filerna lokalt så tänker du att du använder addressen till filerna i exempelmappen via github: `https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/co2-json/<filename>.json` där &lt;filename&gt; byts ut mot landet du vill hämta.
 
 Datan innehåller en hel del nycklar och värden och du kan se en lista på dem i [owid's gitrepo](https://github.com/owid/co2-data/blob/master/owid-co2-codebook.csv).
-
-Du Jobbar vidare i `me/public/` likt tidigare kursmoment.
 
 Bra. Då har du nog allt du behöver för att gå igenom kraven.
 
