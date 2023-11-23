@@ -18,5 +18,8 @@ fetch(`${url}/${file}`)
     .then(function (json) {
         addDataToTable(json)
     })
+    .catch(
+        console.log("some error happened")
+    )
 
 window.console.log('Sandbox is ready!')
