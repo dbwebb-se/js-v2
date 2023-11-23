@@ -18,7 +18,7 @@ Din förra uppgift blev så bra och höll den kvalitét som "eQuality" vill utst
 
 ### Krav
 
-Du jobbar i mappen `public/`. Dela upp koden i relevanta moduler. När uppgiften är klar ska du använd minst två moduler.
+Du jobbar i mappen `public/`. Dela upp koden i relevanta moduler. När uppgiften är klar ska du ha använt minst två moduler.
 
 #### 0. Struktur
 
