@@ -3,7 +3,7 @@ Web Storage API
 
 JavaScript på klientsidan kan lagra data i webbläsaren åt oss. Datan lagras som strängar i nyckel/värde-par. Det är heller ingen data som skickas till någon server, utan den stannar i webbläsaren. Numer finns det hela applikationer som körs med hjälp av Web Storage.
 
-Windowobjektet ger oss två sätt att lagra datan på: *sessionStorage* och *sessionStorage*.
+Windowobjektet ger oss två sätt att lagra datan på: *sessionStorage* och *localStorage*.
 
 Läs mer om [Web Storage på mdn](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 
