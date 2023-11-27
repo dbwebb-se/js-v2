@@ -40,7 +40,7 @@ Bra. Då har du nog allt du behöver för att gå igenom kraven.
 
 ```console
 $ cd me
-$ npm run jsdoc --kmom=public
+$ npm run jsdoc --what=public
 ```
 
 ### Extra uppgift (Optionell)
