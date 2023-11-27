@@ -15,9 +15,9 @@ När vi sparar i sessionen lagras datan så länge som webbläsaren är öppen, 
 
 
 
-#### sessionStorage
+#### localStorage
 
-I sessionStorage lagras datan under en längre tid och man kan bara ta bort datan via JavaScript eller en rensning av cachen eller lokalt lagrad data.
+I localStorage lagras datan under en längre tid och man kan bara ta bort datan via JavaScript eller en rensning av cachen eller lokalt lagrad data.
 
 
 
