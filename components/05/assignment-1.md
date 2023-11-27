@@ -36,7 +36,21 @@ Bra. Då har du nog allt du behöver för att gå igenom kraven.
   * Lägg till en knapp som rensar SessionStorage och laddar om sidan.
 
 9. Fundera ut vilken funktionalitet som bör finnas i `kmom05.js` eller i moduler. När du är klar ska du ha minst en modul.
-10. Kommentera din kod enligt JSDoc och generera dokumentationen:
+
+
+### Validering
+
+Se till så koden validerar:
+
+```console
+$ cd me
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
+```
+
+
+### Generera JSDoc 
 
 ```console
 $ cd me
@@ -49,16 +63,7 @@ $ npm run jsdoc --what=public
 2. Kanske lägga till en "loading gif" i stil med [den här](https://commons.wikimedia.org/wiki/File:Loading_icon.gif). Eller en annan. Välj själv.
 <!-- 1. Implementera cachning av datan så du inte hämtar den mer än en gång. -->
 
-### Validering
 
-Se till så koden validerar:
-
-```console
-$ cd me
-$ npm run eslint --what=public
-$ npm run stylelint --what=public
-$ npm run htmlhint --what=public
-```
 
 ### Avslutningsvis
 
