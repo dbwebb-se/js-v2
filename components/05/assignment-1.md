@@ -30,7 +30,12 @@ Bra. Då har du nog allt du behöver för att gå igenom kraven.
 6. Datan ska presenteras i en tabell med minst sex kolumner.
 7. Välj ut minst tre värden som ska jämföras och vinnarens cell ska markeras, tex grön bakgrundsfärg.
 8. Skapa en "highscorelista" med hjälp av SessionStorage. 
-  * Spara undan vilket land som fick bäst resultat varje år man filterar på. 
+  * Spara undan vilket land som fick bäst resultat varje år man filterar på. Här är det öppet för tolkning och man kan välja hur man presenterar datan. Minsta möjliga är landet samt antal vinster (grön markering), tex: 
+    ```
+    Sweden 3
+    Norway 2
+    Denmark 3
+    ``` 
   * Presentera datan på sidan. 
   * Datan ska vara kvar om man laddar om sidan.
   * Lägg till en knapp som rensar SessionStorage och laddar om sidan.
