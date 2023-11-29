@@ -47,4 +47,57 @@ addNumbers(30, 12)
 
 Vi börjar med en kort beskrivning över vad funktionen gör. `@param` beskriver som väntat vilka parametrar funktionen vill ha, vilken datatyp {number} samt ett namn och en beskrivning. Slutligen kan vi använda `@returns` för att beskriva returvärde. Även där sätter vi datatypen. JSDoc är ganska känslig för grammatik så meningar behöver börja med stor bokstav och sluta med punkt.
 
+
+### Strukturera filer och moduler
+
+När vi jobbar med olika filer och moduler kan det vara bara att separera den genererade dokumentationen så det blir överskådligt vilka funktioner som hör till vilken modul.
+
+Vi kommer ha filerna i en struktur likt:
+
+```console
+js
+│   ├── kmom02.js
+│   ├── kmom03.js
+│   ├── kmom04.js
+│   ├── kmom05.js
+│   ├── main.js
+│   ├── modules
+│   │   ├── kmom02
+│   │   │   ├── animals.js
+│   │   │   └── greeting.js
+│   │   ├── kmom03
+│   │   │   └── info.js
+│   │   ├── kmom04
+│   │   │   ├── helpers.js
+│   │   │   ├── keyboardevents.js
+│   │   │   └── mouseevents.js
+```
+
+Det kommer finnas fler filer och moduler när vi är klara med kursen. Jag tar kursmoment 04 som exempel här.
+
+I startfilen (kmom04.js) skriver vi följande JSDoc kommentarer:
+
+```js
+/**
+ * @namespace kmom04
+ * @property {module:helpers} helpers
+ * @property {module:keyboardevents} keyboardevents
+ * @property {module:mouseevents} mouseevents
+ */
+```
+
+Notera att varje modul vi använder i kursmomentet läggs till som en egen "property".
+
+I respektive modul börjar vi följande:
+
+```js
+/**
+ * @module helpers
+ */
+```
+
+Då har modulerna en koppling till respektive *[namespace](https://jsdoc.app/tags-namespace)* och det blir snyggt och prydligt när dokumenationen genereras.
+
+
+
 På sidan [jsdoc.app](https://jsdoc.app/index.html) kan vi se hur alla tänkbara konstruktioner ska se ut.
