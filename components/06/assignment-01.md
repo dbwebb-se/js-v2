@@ -2,11 +2,11 @@
 
 Nu är det dags att koda ihop ett spel. Det är ett välkänt spel, "Hänga gubben". Om man inte vet hur det går till kan man kika på [reglerna](https://www.wikihow.com/Play-Hangman).
 
-Du jobbar i mappen `kmom06/`.
+Du jobbar i mappen `public/`.
 
 ### Förutsättning
 
-Det förutsätts att du gått igenom artiklarna för [kursmoment 06](../../articles/kmom06) samt är det en fördel om du gjort tidigare kursmoment. De ger dig koll på hur vi börjar jobba med JavaScript, webbläsaren och de tekniker du behöver känna till.
+Det förutsätts att du gått igenom artiklarna för [kursmoment 06](.) samt är det en fördel om du gjort tidigare kursmoment. De ger dig koll på hur vi börjar jobba med JavaScript, webbläsaren och de tekniker du behöver känna till.
 
 ### Intro
 
