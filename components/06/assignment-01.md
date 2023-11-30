@@ -15,7 +15,7 @@ Det är som sagt "hangman" som gäller. Till din hjälp har du en grundstruktur 
 ```console
 # Ställ dig i kursmappen
 $ mkdir me/public/data
-$ mkdir me/public/modules/kmom06
+$ mkdir me/public/js/modules/kmom06
 $ cp example/hangman/words.json me/public/data/
 $ cp example/hangman/index.html me/public/kmom06.html
 $ cp example/hangman/hangman.js me/public/js/modules/kmom06/
@@ -34,7 +34,6 @@ $ cp example/hangman/hangman.js me/public/js/modules/kmom06/
 1. Ladda om sidan för att köra ett nytt spel.
 1. Fundera på vilka delar som behöver vara publika eller privata och gör aktiva val av hur du strukturerar koden.
 
-Tips: När det rättas kommer det kopieras in en ny fil `words.json` som används. Se till så koden skrivs generell och inte låst till era egna ord.
 
 
 ### Validering

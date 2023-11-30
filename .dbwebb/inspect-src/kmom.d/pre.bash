@@ -28,6 +28,20 @@ if [[ "$KMOM" = "kmom01" ]] || [[ "$KMOM" = "kmom02" ]]; then
     eval "$BROWSER" "$url" &
 fi
 
+# if [[ "$KMOM" = "kmom06" ]]; then
+#     if [[ -f "me/public/data/words.json" ]]; then
+#         mv "me/public/data/words.json" "me/public/data/words_temp.json"
+#         echo "[\"Anka\", \"Blåbär\", \"Citron\", \"Drejskiva\", \"Elkontakt\"]" > "me/public/data/words.json"
+#         cd me && npm run http-server &
+#     else
+#         echo "No such file :("
+#     fi
+
+#     local url="localhost:9001"
+#     printf "$url\n" 2>&1
+#     eval "$BROWSER" "$url" &
+# fi
+
 url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/public/jsdoc/index.html"
 printf "$url\n" 2>&1
 eval "$BROWSER" "$url" &

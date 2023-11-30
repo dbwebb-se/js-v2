@@ -6,6 +6,7 @@ declare -a files=(
     "public/jsdoc/index.html"
     "public/kmom06.html"
     "public/js/kmom06.js"
+    "public/data/words.json"
     )
 
 # Print the header for the testsuite
