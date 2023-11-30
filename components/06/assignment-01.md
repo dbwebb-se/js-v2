@@ -10,30 +10,32 @@ Det förutsätts att du gått igenom artiklarna för [kursmoment 06](.) samt är
 
 ### Intro
 
-Det är som sagt "hangman" som gäller. Till din hjälp har du en grundstruktur att utgå ifrån. Här är grunden ett objekt som använder sig utav "revealing pattern". Du ska utgå ifrån den kodbasen och skapa ett fungerande spel utifrån vissa krav. Börja med att kopiera in filerna:
+Det är som sagt "hangman" som gäller. Till din hjälp har du en grundstruktur att utgå ifrån. Här är grunden ett objekt som använder sig utav "revealing pattern". Du ska utgå ifrån den kodbasen och skapa ett fungerande spel utifrån vissa krav. Börja med att kopiera in filerna och skapa de relevanta delarna:
 
 ```console
 # Ställ dig i kursmappen
-$ cp -r example/hangman/* me/kmom06/
+$ mkdir me/public/data
+$ mkdir me/public/modules/kmom06
+$ cp example/hangman/words.json me/public/data/
+$ cp example/hangman/index.html me/public/kmom06.html
+$ cp example/hangman/hangman.js me/public/js/modules/kmom06/
 ```
 
 ### Krav
 
-1. Använd filerna du kopierade och skapa en bra grundstruktur.
-1. Skapa bokstäverna som du kan klicka på, du kan bara klicka på en bokstav en gång. Då skall den ändra style och inte gå att klicka på.
-1. Skapa en ordlista (minst fem ord) som en del av din Hangman-modul. Skapa en funktion `Hangman.wordlist()` som exporteras och skriver ut hela ordlistan i consolen.
+1. Använd filerna du kopierade och skapa en bra grundstruktur. Lägg till din navbar och se till så menyvalet "kmom06" även finns med. Skapa även filen `js/kmom06.js`, vilken du ska läsa in i `public/kmom06.html`.
+1. Skapa bokstäverna som du kan klicka på, du kan bara klicka på en bokstav en gång. Då skall den ändra style och inte gå att klicka på längre.
+1. Uppdatera file `data/words.json` med egna ord.
+1. Skapa en funktion `Hangman.wordlist()` som exporteras och skriver ut hela ordlistan i consolen. Använd fetch med async/await.
 1. Skapa en funktion som slumpar fram ett ord från ordlistan. Detta blir det aktiva ordet. Skapa en funktion `Hangman.peek()` som exporteras, det skall returnera det aktiva ordet.
 1. När spelaren klickar på en bokstav så kontrollerar du om bokstaven finns i ordet. Om bokstaven inte finns så ritar du ut en del av bilden. Rita ut ordet med en kombination av `_` för icke gissade bokstäver och de gissade bokstäverna på sina rätta platser.
 1. När (om) alla delar är utritade så visar du ett meddelande om “Game Over” på spelplanen, eller motsvarande. Det går nu inte att göra några fler gissningar.
 1. När (om) spelaren har gissat alla bokstäver i ordet så skriver du ut “You Won The Game!” på spelplanen, eller motsvarande. Det går nu inte att göra några fler gissningar.
 1. Ladda om sidan för att köra ett nytt spel.
 1. Fundera på vilka delar som behöver vara publika eller privata och gör aktiva val av hur du strukturerar koden.
-1. Kommentera din kod enligt JSDoc och generera dokumentationen:
 
-```console
-$ cd me
-$ npm run jsdoc --kmom=kmom06
-```
+Tips: När det rättas kommer det kopieras in en ny fil `words.json` som används. Se till så koden skrivs generell och inte låst till era egna ord.
+
 
 ### Validering
 
@@ -41,15 +43,27 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run linter kmom06/
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
 ```
 
-### Webpack
 
-Packa ihop koden innan publicering:
+### Generera JSDoc
+
+Strukturera gärna dokumentationen likt exemplet i [artikeln om jsdoc](../02/04_jsdoc.md).
 
 ```console
-$ npm run build --kmom=kmom06
+$ cd me
+$ npm run jsdoc --what=public
+```
+
+### Publicera
+
+Vid det här laget kan vi proceduren.
+
+```console
+$ dbwebb publish public
 ```
 
 
