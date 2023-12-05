@@ -1,6 +1,6 @@
 Hej,
 
-Den här veckan har det handlat om eventlyssnare, DOM, HTML och lite CSS. Jag hoppas kursmomentet gav dig en insikt i hur vi kan manipulera DOM på olika sätt.
+Den här uppgiften har det handlat om eventlyssnare, DOM, HTML och lite CSS. Jag hoppas kursmomentet gav dig en insikt i hur vi kan manipulera DOM på olika sätt.
 
 Jag har tittat på Rainbowuppgiften och dess kod och det rullar på fint och alla är på rätt plats med rätt information.
 
