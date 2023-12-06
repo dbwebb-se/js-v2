@@ -10,21 +10,32 @@ Utveckla och leverera projektet enligt specifikationen från kunden (se längre 
 
 De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De tre sista kraven samt genererad dokumentation är optionella krav. Lös de optionella kraven för att samla poäng och därmed nå högre betyg.
 
-Varje krav ger max 10 poäng, totalt är det 60 poäng.
+Varje grundkrav ger max 10 poäng (30).
+Varje optionellt krav ger max 15 poäng (30).
+Totalt är det 60 poäng.
+
+Exempel 1: Deltest 1, 2 och 3 är grundkrav. Deltest 4 och 5 blir optionella.
+Exempel 2: Deltest 1, 2 och 4 är grundkrav. Deltest 3 och 5 blir optionella.
+Exempel 3: Deltest 1, 2 och 5 är grundkrav. Deltest 3 och 4 blir optionella.
 
 ### Deltest 1, 2, 3: Grunden
 
-Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg som består av deltest 1, 2 och ett av deltesten 3, 4 eller 5 samt genererad dokumentation.
+Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg som består av:
 
-Spara filerna i katalogen `me/kmom10/`.
+1. Deltest 1, 2 och minst ett av deltesten 3, 4 eller 5.
+2. Genererad dokumentation. Dubbelkolla så den finns publicerad och strukturerad så det går att se vilken dokumentation som hör till projektet.
+3. All kod ska validera.
+
+Spara filerna i katalogen `public/`.
 
 Strukturera din kod i en eller flera ES moduler. Fundera igenom hur du vill strukturera innan du börjar.
 
 Varje del-test skall kunna nollställas och startas om. Det är en fusk-funktion som låter användaren göra om del-testet för att få bättre resultat. Det ska gå att köra `window.reset()` i konsolen i webbläsaren för att starta om deltestet.
 
+
 ### Deltest 4, 5, 6: Optionellt
 
-Välj att göra ett eller två ytterligare del-tester. Välj de som du ännu inte gjort av deltest 3, 4 och 5.
+Välj att göra ett eller två ytterligare deltester. Välj de som du ännu inte gjort av deltest 3, 4 och 5.
 
 Varje deltest är här värt 15 poäng styck. Totalt 30 poäng.
 
@@ -42,7 +53,7 @@ Hela testet skall köras i en enda HTML-sida, utan omladdningar. Varje test skal
 
 Första delen av testet är valfritt antal 1X2-frågor. Som en tipspromenad. Frågan visas upp i webbsidan. Testpersonen svarar på frågan (genom att till exempel klicka på svarsalternativen) och får därefter direkt se det rätta svaret. Sedan kan testpersonen välja att gå vidare till nästa fråga.
 
-Du väljer att ta med minst 5 tipsfrågor, bara för att visa hur det fungerar.
+Du väljer att ta med minst 5 tipsfrågor, bara för att visa hur det fungerar. Frågorna och svaren ska läsas in från en JSON-fil så det enkelt går att uppdatera dem.
 
 Testpersonen samlar poäng i varje deltest. Här är förslaget att rätt svar ger tre poäng per fråga och fel ger 0 poäng.
 
@@ -110,22 +121,12 @@ Testpersonen skall få instruktioner att klicka på alla objekt som:
 2. Har en annan form än kvadrat...
 3. ...eller är röd och kvadrat.
 
-Man ska t ex **inte** klicka på en gul kvadrat eller en röd cirkel men man ska klicka på en röd kvadrat.
+Man ska till exempel **inte** klicka på en gul kvadrat eller en röd cirkel men man ska klicka på en röd kvadrat.
 
 Rätt klick ger +1 poäng och fel ger -1 poäng.
 
 När testet är klart så visas resultatet tillsammans med en länk till nästa test.
 
-### JSDoc: genererad dokumentation (optionellt)
-
-Kommentera koden likt tidigare kursmoment och generera dokumentationen. Glöm inte att dubbelkolla så att dokumentationen är genererad i mappen `jsdoc`. Om det inte finns med är det 0 poäng.
-
-För 6 poäng ska det finnas dokumentation för moduler, objekt, funktioner, parametrar, returvärde samt eventlyssnare.
-
-```console
-$ cd me
-$ npm run jsdoc --kmom=kmom10
-```
 
 ### Formel för att beräkna intelligensen
 
@@ -141,19 +142,31 @@ Specen innehåller grova förslag till poängsättningen, men du kan justera den
 När testet är slut så visas en siffra upp som motsvarar intelligensen, tillsammans med siffran för maximal intelligens.
 
 
-### Validering (4p)
+### Validering
 
 Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run linter kmom10/
+$ npm run eslint --what=kmom10
+$ npm run htmlhint --what=kmom10
+$ npm run stylelint --what=kmom10
 ```
 
-### Webpack
+### Generera JSDoc
 
-Packa ihop koden innan publicering:
+Strukturera dokumentationen likt exemplet i [artikeln om jsdoc](../02/04_jsdoc.md).
 
 ```console
-$ npm run build --kmom=kmom10
+$ cd me
+$ npm run jsdoc --what=public
+```
+
+### Publicering
+
+Publicera koden:
+
+```console
+$ cd me
+$ dbwebb publish public
 ```
