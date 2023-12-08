@@ -6,6 +6,8 @@ Koden passerar validatorerna.
 
 Jag har tittat på "co2 emission" uppgiften och allt fungerar och visas i rätt ordning. Jag kunde välja årtal och tabellen uppdaterades och markerade rätt celler.
 
+Highscorelistan finns även den på plats och fungerar fint.
+
 Snyggt jobbat med kursmomentet. Kör vidare med Hangman!
 
 $TEACHER_SIGNATURE
