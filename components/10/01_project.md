@@ -26,7 +26,7 @@ Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg 
 2. Genererad dokumentation. Dubbelkolla så den finns publicerad och strukturerad så det går att se vilken dokumentation som hör till projektet.
 3. All kod ska validera.
 
-Spara filerna i katalogen `public/`.
+Spara filerna i katalogen `public/`. Börja likt tidigare med en startfil, `kmom10.html` som läser in filen `js/kmom10.js`. Skapa modulerna du använder i en mapp `js/modules/kmom10/`.
 
 Strukturera din kod i en eller flera ES moduler. Fundera igenom hur du vill strukturera innan du börjar.
 
