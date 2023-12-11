@@ -148,9 +148,9 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run eslint --what=kmom10
-$ npm run htmlhint --what=kmom10
-$ npm run stylelint --what=kmom10
+$ npm run eslint --what=public
+$ npm run htmlhint --what=public
+$ npm run stylelint --what=public
 ```
 
 ### Generera JSDoc
