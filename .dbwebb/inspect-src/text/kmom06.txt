@@ -2,8 +2,11 @@ Då kör vi kmom06!
 
 Vi har lärt oss lite mer om objekt och hur vi kan skapa egna instanser som vi kan använda. Till detta har vi ju också skapat ett hänga gubben spel, där vi fick träna lite mer på moduler och uppdelning av kod.
 
-Jag har spelat ditt Hangman och det flyter på bra. Jag har även tittat i koden och de relevanta delarna exporteras och det har en fin struktur.
+Jag har spelat ditt Hangman och det flyter på bra. Jag har även tittat i koden och den har en fin struktur och en bra uppdelning med moduler och funktioner.
+
+All kod passerar validatorerna.
 
 Bra genomfört moment och lycka till med projektet!
 
-$TEACHER_SIGNATURE
+// Kenneth (klw@bth.se)
+
