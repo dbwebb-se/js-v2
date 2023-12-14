@@ -8,4 +8,4 @@ All kod passerar validatorerna.
 
 Bra genomfört moment och lycka till med projektet!
 
-// $TEACHER_SIGNATURE
+$TEACHER_SIGNATURE
