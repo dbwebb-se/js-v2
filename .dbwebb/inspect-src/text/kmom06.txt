@@ -8,5 +8,4 @@ All kod passerar validatorerna.
 
 Bra genomfört moment och lycka till med projektet!
 
-// Kenneth (klw@bth.se)
-
+// $TEACHER_SIGNATURE
