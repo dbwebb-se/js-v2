@@ -43,14 +43,53 @@ Du kan nu starta programmen från windows-terminalen `cmd` eller ifrån Cygwin. 
 Installera på Windows 10/11 WSL Debian/Ubuntu/Bash
 -------------------------------
 
-Även om du har installerat Node på din Windows-maskin, och du använder WSL, så behöver du installera Node/npm i din klient i WSL. Du har då två installationer av Node, en i Windows och en i ditt WSL.
+Även om du har installerat Node på din Windows-maskin, och du använder WSL, så behöver du installera Node/npm i din klient i WSL. Du har då två installationer av Node, en i Windows och en i ditt WSL. Avinstallera Nodejs i Windows, då det har en förmåga att krocka med installationen i WSL.
 
 Olika linux-varianter har olika sätt att installera node och npm. Följ instruktionerna på [nedladdningssidan för olika pakethanterare](https://nodejs.org/en/download/package-manager/). Det kan finnas vissa förberedelser som behövs för att du skall kunna installera den senaste versionen, det handlar om vilket repo som apt-get använder för att hämta installationsfilern från. Kolla nedladdningssidan för att vara säker.
 
 
+
+### Installera med nvm
+
+Vi kan installera node och npm på flera sätt. En vanig metod för att installera Nodejs är att använda "nvm" (node version manager). Vi börjar med att installera programmet cURL, som används för att hämta filer från internet via terminalen. Det är säkerligen redan installerat hos dig.
+
+```console
+$ sudo apt install curl
+```
+
+Sedan kan vi hämta och installera nvm med följande kommando:
+
+```console
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
+
+Lista tillgängliga versioner:
+
+```console
+$ nvm ls
+# flera versioner listas
+```
+
+Installera senaste LTS versionen:
+
+```console
+$ nvm install --lts
+# I skrivande stund är det v20.18.0
+```
+
+Nu kan du se de installerade versionerna med `$ nvm ls`.
+
+Vi kan även använda nvm för att skifta mellan installerade versioner men det är inget vi behöver göra i kursen.
+
+
+
 ### Installera med snap
 
-Sist jag installerade på WSL Ubuntu-22.04 (Oktober 2023) använde jag den nya pakethanteraren `snap`. Om man har en senare version av Ubuntu, tex 22.04 så finns det förinstallerat. Vi kan se vilka varianter som finns att välja mellan:
+[INFO]
+OBS! Om du installerat Nodejs via nvm behöver du inte installera det igen. Hoppa då över detta steg.
+[/INFO]
+
+Sist jag installerade på WSL Ubuntu-22.04 (Oktober 2023) använde jag pakethanteraren `snap`. Om man har en senare version av Ubuntu, tex 22.04 så finns det förinstallerat. Vi kan se vilka varianter som finns att välja mellan:
 
 ```console
 $ snap info node
@@ -78,37 +117,6 @@ $ sudo snap install node --classic --channel=20
 ```
 
 `--channel=20` talar om att det är den versionen vi vill ha. Skulle vi vilja byta gör vi det enkelt med: `$ sudo snap refresh node --channel=18` för version 18.
-
-### Installera med nvm
-
-Vi kan installera node och npm på flera sätt. Om ovan metod inte skulle fungera kan man använda "nvm" (node version manager). Vi börjar med att installera programmet cURL, som används för att hämta filer från internet via terminalen.
-
-```console
-$ sudo apt install curl
-```
-
-Sedan kan vi hämta och installera nvm med följande kommando:
-
-```console
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-```
-
-Lista tillgängliga versioner:
-
-```console
-$ nvm ls
-# flera versioner listas
-```
-
-Installera senaste LTS versionen:
-
-```console
-$ nvm install --lts
-```
-
-Nu kan du se de installerade versionerna med `$ npm ls`.
-
-Vi kan även använda nvm för att skifta mellan installerade versioner men det är inget vi behöver göra i kursen.
 
 
 
