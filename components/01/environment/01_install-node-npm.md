@@ -85,9 +85,8 @@ Vi kan även använda nvm för att skifta mellan installerade versioner men det 
 
 ### Installera med snap
 
-[INFO]
-OBS! Om du installerat Nodejs via nvm behöver du inte installera det igen. Hoppa då över detta steg.
-[/INFO]
+**OBS! Om du installerat Nodejs via nvm behöver du inte installera det igen. Hoppa då över detta steg.**
+
 
 Sist jag installerade på WSL Ubuntu-22.04 (Oktober 2023) använde jag pakethanteraren `snap`. Om man har en senare version av Ubuntu, tex 22.04 så finns det förinstallerat. Vi kan se vilka varianter som finns att välja mellan:
 

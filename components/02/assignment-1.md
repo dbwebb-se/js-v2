@@ -48,7 +48,7 @@ America: Devil's Hole pupfish (2)
 
 7. När du är klar ska filen `kmom02.js` exportera följande funktioner: `export { getAll, getFrom, filterAnimals, whereLives, report }`
 
-8. Generera JSDoc med scriptet `npm run jsdoc --what=kmom02`
+8. Generera JSDoc med scriptet `npm run jsdoc --what=kmom02`. 
 
 Dubbelkolla så den stämmer.
 
