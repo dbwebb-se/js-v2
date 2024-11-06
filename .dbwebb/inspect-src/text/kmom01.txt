@@ -2,7 +2,7 @@ Tjenare,
 
 Vad bra att labbmiljön är på plats. Både node och npm är standardverktyg för en programmerare och bör finnas tillgängliga på alla arbetsstationer. Vi har rdan nu börjat kika på fler verktyg i package.json som kommer att underlätta livet för oss.
 
-Jag har validerat din kod med eslint, htmlhint och stylelint och det såg ju bra ut. Vidare tittade jag på koden och testkörde scripten med olika argument. Båda scripten ger korrekt resultat och din me-sida var på plats.
+Jag har validerat din kod med eslint, htmlhint och stylelint och det såg ju bra ut. Vidare tittade jag på koden och testkörde scripten med olika argument. Båda scripten ger korrekt resultat och din me-sida var på plats och både hälsning och datum fanns i konsolen.
 
 Allt är väl, så här långt. Kör på!
 

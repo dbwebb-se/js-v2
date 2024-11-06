@@ -41,11 +41,11 @@ fi
 #     printf "$url\n" 2>&1
 #     eval "$BROWSER" "$url" &
 # fi
-
-url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/public/jsdoc/index.html"
-printf "$url\n" 2>&1
-eval "$BROWSER" "$url" &
-
+if [[ "$KMOM" != "kmom01" ]]; then
+  url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/public/jsdoc/index.html"
+  printf "$url\n" 2>&1
+  eval "$BROWSER" "$url" &
+fi
 
 # if [[ ! -f "package.json" ]] || [[ ! -f ".eslintrc.json" ]] || [[ ! -f "jsdoc.json" ]] || [[ ! -f ".stylelintrc.json" ]];then
 #     read -p "Missing files. Should I fix it? [Y/n]" answer
