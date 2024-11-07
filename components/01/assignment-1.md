@@ -81,6 +81,7 @@ $ node forloop.js 12 12
 6
 4
 2
+0
 ```
 
 4. Kör `dbwebb test kmom01` för att se så allt validerar och att filerna ligger på rätt plats.
