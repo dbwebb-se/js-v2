@@ -33,7 +33,7 @@ Kikar vi i info.js ser vi att det är en modul som exporterar tre arrayer, `colo
 1. När man klickar på knappen ska det även läggas till en eventlyssnare som lägger till en ram runt formen när muspekaren är på elementet. När man för musen utanför ska ramen försvinna.
 1. När man klickar på en form ska respektive namn och år skrivas ut tillsammans med bilden `logo.png`. Namn och år finns i `info.js` och bilden finns i mappen `img/`.
 1. Utöver dessa krav vill de se hur dina vingar bär. Utmana dig själv och lägg gärna till mer funktionalitet. Skapar du fler moduler lägger du dem i mappen `modules/kmom3/`.
-1. Kommentera din kod enligt JSDoc och generera dokumentationen:
+1. Kommentera din kod enligt JSDoc och generera dokumentationen. Se till så du fortsätter med strukturen från kmom02:
 
 ```console
 $ cd me

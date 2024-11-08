@@ -67,8 +67,8 @@ För det här kursmomentet finns en testsuite som kontrollerar modulen.
 
 ```console
 # Ställ dig i kursroten
+$ cp example/animals/kmom02.test.js me/kmom02/
 $ cd me
-$ cp ../example/animals/kmom02.test.js kmom02/
 $ npm test --what=kmom02
 ```
 

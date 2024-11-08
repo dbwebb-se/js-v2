@@ -269,9 +269,14 @@ function checkTool() {
 function openUrl {
     local url="$1"
 
+<<<<<<< HEAD
     printf "$url\n"
     eval "$BROWSER" "$url" &
     sleep 0.5
+=======
+    printf "$url\n" 2>&1
+    eval "$BROWSER" "$url" &
+>>>>>>> 603cd8a (clearified instructions)
 }
 
 
@@ -404,7 +409,11 @@ function getSemanticVersion
 #
 #
 checkTool dialog "Install using your packet manager (apt-get|brew install dialog)."
+<<<<<<< HEAD
 #checkTool realpath "Install using your packet manager (brew install coreutils)."
+=======
+checkTool realpath "Install using your packet manager (brew install coreutils)."
+>>>>>>> 603cd8a (clearified instructions)
 
 # What is the directory of the current course repo, find recursivly up the tree
 DBW_COURSE_FILE_NAME=".dbwebb.course"
@@ -454,16 +463,24 @@ BROWSER="firefox"
 TO_CLIPBOARD="xclip -selection c"
 OS_TERMINAL=""
 
+<<<<<<< HEAD
 if [[ "$(uname -r)" == *"microsoft"* ]]; then   # WSl on Unix
     OS_TERMINAL="wsl"
     TO_CLIPBOARD="clip.exe"
     BROWSER="wslview"
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then   # Linux, use defaults
+=======
+if [[ "$OSTYPE" == "linux-gnu" ]]; then   # Linux, use defaults
+>>>>>>> 603cd8a (clearified instructions)
     OS_TERMINAL="linux"
 elif [[ "$OSTYPE" == "darwin"* ]]; then   # Mac OSX
     OS_TERMINAL="macOS"
     TO_CLIPBOARD="iconv -t macroman | pbcopy"
+<<<<<<< HEAD
     BROWSER="open"
+=======
+    BROWSER="/Applications/Firefox.app/Contents/MacOS/firefox"
+>>>>>>> 603cd8a (clearified instructions)
 elif [[ "$OSTYPE" == "cygwin" ]]; then    # Cygwin
     OS_TERMINAL="cygwin"
     TO_CLIPBOARD="cat - > /dev/clipboard"
@@ -1097,7 +1114,11 @@ initLogfile()
 
     header "GUI Inspect" | tee "$LOGFILE"
 
+<<<<<<< HEAD
     printf "%s\n%s %s %s\n%s\nInspect GUI %s (%s)\n" "$( date )" "$COURSE" "$kmom" "$acronym" "$what" "$VERSION" "$OS_TERMINAL" | tee -a "$LOGFILE"
+=======
+    printf "%s\n%s %s %s\n%s\nInspect GUI %s\n" "$( date )" "$COURSE" "$kmom" "$acronym" "$what" "$VERSION" | tee -a "$LOGFILE"
+>>>>>>> 603cd8a (clearified instructions)
 }
 
 
@@ -1112,10 +1133,18 @@ feedback()
     local output
 
     header "Feedback" > "$LOGFILE_TEXT"
+<<<<<<< HEAD
     output=$( eval echo "\"$( cat "$baseDir/$kmom.txt" )"\" )
     #output=$(< "$DIR/text/$kmom.txt" )
     printf "\n%s\n\n" "$output" >> "$LOGFILE_TEXT"
     printf "%s" "$output" | eval "$TO_CLIPBOARD"
+=======
+
+    output=$( eval echo "\"$( cat "$baseDir/$kmom.txt" )"\" )
+    #output=$(< "$DIR/text/$kmom.txt" )
+    printf "\n%s\n\n" "$output" >> "$LOGFILE_TEXT"
+    printf "%s" "$output" | eval $TO_CLIPBOARD
+>>>>>>> 603cd8a (clearified instructions)
 
     if [[ -f "$baseDir/${kmom}_extra.txt" ]]; then
         output=$(< "$baseDir/${kmom}_extra.txt" )
@@ -1251,11 +1280,19 @@ makeInspectDocker()
 
     if [ $OS_TERMINAL == "linux" ]; then
         #setsid make docker-run what="make inspect what=$kmom options='--yes'" > "$LOGFILE_INSPECT" 2>&1 &
+<<<<<<< HEAD
         setsid docker-compose run --rm cli make inspect what=$kmom options='--yes' > "$LOGFILE_INSPECT" 2>&1 &
         DBWEBB_INSPECT_PID="$!"
     else
         #make docker-run what="make inspect what=$kmom options='--yes'" > "$LOGFILE_INSPECT" 2>&1 &
         docker-compose run --rm cli make inspect what=$kmom options='--yes' > "$LOGFILE_INSPECT" 2>&1 &
+=======
+        setsid docker-compose run --rm -it cli make inspect what=$kmom options='--yes' > "$LOGFILE_INSPECT" 2>&1 &
+        DBWEBB_INSPECT_PID="$!"
+    else
+        #make docker-run what="make inspect what=$kmom options='--yes'" > "$LOGFILE_INSPECT" 2>&1 &
+        docker-compose run --rm -it cli make inspect what=$kmom options='--yes' > "$LOGFILE_INSPECT" 2>&1 &
+>>>>>>> 603cd8a (clearified instructions)
         DBWEBB_INSPECT_PID="$!"
     fi
 
@@ -1276,11 +1313,15 @@ makeDockerRunExtras()
 
     # Move to root to execute make
     cd "$DBW_COURSE_DIR" || exit
+<<<<<<< HEAD
 
     # realpath not available on mac ventura (odd version) nor brew
     #script="$( realpath --relative-to="${PWD}" "$path" )"
     script=${path#"$PWD"}
     script=${script#"/"}
+=======
+    script="$( realpath --relative-to="${PWD}" "$path" )"
+>>>>>>> 603cd8a (clearified instructions)
 
     # # Run the scripts using run.bash through make
     # header "Docker run ($kmom)" | tee -a "$LOGFILE"
@@ -1314,11 +1355,15 @@ makeNoDockerRunExtras()
 
     # Move to root to execute make
     cd "$DBW_COURSE_DIR" || exit
+<<<<<<< HEAD
 
     # realpath not available on mac ventura (odd version) nor brew
     #script="$( realpath --relative-to="${PWD}" "$path" )"
     script=${path#"$PWD"}
     script=${script#"/"}
+=======
+    script="$( realpath --relative-to="${PWD}" "$path" )"
+>>>>>>> 603cd8a (clearified instructions)
 
     # # Run the scripts using run.bash through make
     # header "Docker run ($kmom)" | tee -a "$LOGFILE"

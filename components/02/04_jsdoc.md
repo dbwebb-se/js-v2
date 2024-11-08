@@ -48,7 +48,7 @@ addNumbers(30, 12)
 Vi börjar med en kort beskrivning över vad funktionen gör. `@param` beskriver som väntat vilka parametrar funktionen vill ha, vilken datatyp {number} samt ett namn och en beskrivning. Slutligen kan vi använda `@returns` för att beskriva returvärde. Även där sätter vi datatypen. JSDoc är ganska känslig för grammatik så meningar behöver börja med stor bokstav och sluta med punkt.
 
 
-### Strukturera filer och moduler
+### Strukturera filer och moduler (gäller från kmom02 - uppgift 2)
 
 När vi jobbar med olika filer och moduler kan det vara bara att separera den genererade dokumentationen så det blir överskådligt vilka funktioner som hör till vilken modul.
 
