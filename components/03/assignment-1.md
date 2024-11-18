@@ -26,7 +26,7 @@ Kikar vi i info.js ser vi att det är en modul som exporterar tre arrayer, `colo
 ### Krav
 
 1. Lägg till menyvalet "kmom03" som ska länka till filen `kmom03.html`.
-1. Läs där in scriptet `js/kmom03.js` som i sin tur använder `modules/kmom03/info.js`.
+1. Läs där in scriptet `js/kmom03.js` som i sin tur använder `modules/kmom03/info.js`, antingen direkt eller via en modul.
 1. Börja med en tom sida med en knapp i mitten.
 1. Varje gång man klickar på knappen ska en form ritas ut med korrekt bakgrundsfärg. Färgerna finns i ordning i arrayen `colors`.
 1. Knappen ska visa vilken form i ordningen som kommer näst. När alla former är framme, tas knappen bort.
