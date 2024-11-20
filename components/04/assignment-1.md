@@ -7,9 +7,9 @@ I den här uppgiften tränar vi mer på manipuleringen av dom. Vi ska bygga vida
 
 Det förutsätts att du gått igenom artiklarna för [kursmoment 04](.) samt är det en fördel om du gjort tidigare kursmoment. De ger dig koll på hur vi börjar jobba med JavaScript och webbläsaren.
 
-Till det här kursmomentet är spellistan [Kom igång med js HT23](https://www.youtube.com/watch?v=3Ht9L_9mB6M&list=PLKtP9l5q3ce8v_z6kLJsIfCJNP4zEtd9c) relevant.
+Till det här kursmomentet är spellistan [Kom igång med js](https://www.youtube.com/watch?v=3Ht9L_9mB6M&list=PLKtP9l5q3ce8v_z6kLJsIfCJNP4zEtd9c) relevant.
 
-Vi har även i tidigare kursmoment gått igenom hur vi lägger till element, positionerar element och jobbar med eventlyssnare. Det är en förutsättning att ha jobbat igenom kursmoment 02 och 03.
+Vi har även i tidigare kursmoment gått igenom hur vi lägger till element, positionerar element och jobbar med eventlyssnare och moduler. Det är en förutsättning att ha jobbat igenom kursmoment 02 och 03.
 
 ### Intro
 
@@ -211,6 +211,8 @@ Gör en egen valfri händelse. Skriv i consolen hur eventet triggas.
 Det kan vara enkelt eller utmanande, välj en rimlig nivå.
 
 ### Kommentera din kod enligt JSDoc och generera dokumentationen
+
+Glöm inte att fortsätta med namespace.
 
 ```console
 $ cd me
