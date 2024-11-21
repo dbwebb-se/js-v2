@@ -18,7 +18,7 @@ Din förra uppgift blev så bra och höll den kvalitét som "eQuality" vill utst
 
 ### Krav
 
-Du jobbar i mappen `public/`. Dela upp koden i relevanta moduler. När uppgiften är klar ska du ha använt minst två moduler.
+Du jobbar i mappen `public/`. Dela upp koden i relevanta moduler. När uppgiften är klar ska du ha använt **minst två moduler**.
 
 #### 0. Struktur
 
@@ -30,6 +30,8 @@ Du jobbar i mappen `public/`. Dela upp koden i relevanta moduler. När uppgiften
 
 
 #### 1. Storlekar och position
+
+Generellt ska inga element kunna placeras eller flyttas utanför fönstret.
 
 ##### 1.1 Placera ut en röd låda
 
@@ -202,7 +204,7 @@ När man trycker på `p` så skall ett slumpmässigt element skapas. Ta en kopia
 
 ##### 3.9 Piltangenterna
 
-Skapa händelser för piltangenterna så att man kan flytta valda element till höger, vänster, upp och ned. Välj själv hur många pixel du vill flytta för varje tangentnedtryckning.
+Skapa händelser för piltangenterna så att man kan flytta valda element till höger, vänster, upp och ned. Välj själv hur många pixel du vill flytta för varje tangentnedtryckning. Elementet ska inte kunna gå utanför fönstret.
 
 #### 4. Gör en egen händelse
 
