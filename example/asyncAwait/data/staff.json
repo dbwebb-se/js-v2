@@ -36,5 +36,14 @@
             "DV1506",
             "DV1612"
         ]
+    },
+    {
+        "firstname": "Betty",
+        "lastname": "Bergqvist",
+        "courses": [
+            "DV1657",
+            "DV1111",
+            "DV1545"
+        ]
     }
 ]
