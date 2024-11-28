@@ -14,7 +14,7 @@ Uppdragen rullar in och näst på tur står organisationen "Carbonara". Det är 
 
 Som av en händelse har de hittat data de vill att du använder från "[Our World In Data (owid)](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions)".
 
-I din exempelmapp finns [tre filer](../../example/co2-json) med färdigextraherad data. Då det inte går att hämta filerna lokalt så tänker du att du använder addressen till filerna i exempelmappen via github: `https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/co2-json/<filename>.json` där &lt;filename&gt; byts ut mot landet du vill hämta.
+I din exempelmapp finns [tre filer](../../example/co2-json) med färdigextraherad data. Du kan öppna dem lokalt och titta på dem. I koden ska vi använda Fetch API och använda filerna från exempelmappen via github: `https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/co2-json/<filename>.json` där &lt;filename&gt; byts ut mot landet du vill hämta.
 
 Datan innehåller en hel del nycklar och värden och du kan se en lista på dem i [owid's gitrepo](https://github.com/owid/co2-data/blob/master/owid-co2-codebook.csv).
 
@@ -28,19 +28,19 @@ Bra. Då har du nog allt du behöver för att gå igenom kraven.
 4. Använd async/await för att invänta datan.
 5. Man ska bara kunna välja år mellan `1900` och `2019`.
 6. Datan ska presenteras i en tabell med minst sex kolumner.
-7. Välj ut minst tre värden som ska jämföras och vinnarens cell ska markeras, tex grön bakgrundsfärg.
-8. Skapa en "highscorelista" med hjälp av SessionStorage. 
-  * Spara undan vilket land som fick bäst resultat varje år man filterar på. Här är det öppet för tolkning och man kan välja hur man presenterar datan. Minsta möjliga är landet samt antal vinster (grön markering), tex: 
+7. Välj ut minst tre värden som ska jämföras och "vinnarens" cell ska markeras, tex grön bakgrundsfärg.
+8. Skapa en "highscorelista" med hjälp av SessionStorage.
+  * Spara undan vilket land som fick bäst resultat varje år man filterar på. Här är det öppet för tolkning och man kan välja hur man presenterar datan. Minsta möjliga är landet samt antal vinster (grön markering), tex:
     ```
     Sweden 3
     Norway 2
     Denmark 3
-    ``` 
-  * Presentera datan på sidan. 
+    ```
+  * Presentera datan på sidan.
   * Datan ska vara kvar om man laddar om sidan.
   * Lägg till en knapp som rensar SessionStorage och laddar om sidan.
 
-9. Fundera ut vilken funktionalitet som bör finnas i `kmom05.js` eller i moduler. När du är klar ska du ha minst en modul.
+9. Fundera ut vilken funktionalitet som bör finnas i `kmom05.js` eller i moduler. När du är klar ska du ha **minst en modul**.
 
 
 ### Validering
@@ -55,7 +55,9 @@ $ npm run htmlhint --what=public
 ```
 
 
-### Generera JSDoc 
+### Generera JSDoc
+
+Se till så det blir bra struktur med namespace "kmom05".
 
 ```console
 $ cd me
