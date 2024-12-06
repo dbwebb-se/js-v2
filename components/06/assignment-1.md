@@ -25,14 +25,17 @@ $ cp example/hangman/hangman.js me/public/js/modules/kmom06/
 
 1. Använd filerna du kopierade och skapa en bra grundstruktur. Lägg till din navbar och se till så menyvalet "kmom06" även finns med. Skapa även filen `js/kmom06.js`, vilken du ska läsa in i `public/kmom06.html`.
 1. Skapa bokstäverna som du kan klicka på, du kan bara klicka på en bokstav en gång. Då skall den ändra style och inte gå att klicka på längre.
-1. Uppdatera file `data/words.json` med egna ord.
-1. Skapa en funktion `Hangman.wordlist()` som exporteras och skriver ut hela ordlistan i consolen. Använd fetch med async/await.
-1. Skapa en funktion som slumpar fram ett ord från ordlistan. Detta blir det aktiva ordet. Skapa en funktion `Hangman.peek()` som exporteras, det skall returnera det aktiva ordet.
+1. Uppdatera file `data/words.json` med egna ord. Här ska vi ha minst 5 stycken.
+1. Skapa en funktion som skriver ut hela ordlistan i consolen vid uppstart.
+1. Använd fetch med async/await för att hantera `words.json`.
+1. Skapa en funktion som slumpar fram ett ord från ordlistan. Detta blir det aktiva ordet.
 1. När spelaren klickar på en bokstav så kontrollerar du om bokstaven finns i ordet. Om bokstaven inte finns så ritar du ut en del av bilden. Rita ut ordet med en kombination av `_` för icke gissade bokstäver och de gissade bokstäverna på sina rätta platser.
 1. När (om) alla delar är utritade så visar du ett meddelande om “Game Over” på spelplanen, eller motsvarande. Det går nu inte att göra några fler gissningar.
 1. När (om) spelaren har gissat alla bokstäver i ordet så skriver du ut “You Won The Game!” på spelplanen, eller motsvarande. Det går nu inte att göra några fler gissningar.
 1. Ladda om sidan för att köra ett nytt spel.
 1. Fundera på vilka delar som behöver vara publika eller privata och gör aktiva val av hur du strukturerar koden.
+1. När du är klar ska Hangman vara en modul och övrig funktionalitet ska hanteras via minst en annan modul. Totalt ska då minst två moduler finnas dokumenterade i namespacet "kmom06".
+1. Skapa en metod (funktion) i objektet `window` som skriver ut det aktiva ordet. Metoden ska heta `window.peek`.
 
 
 
@@ -59,7 +62,7 @@ $ npm run jsdoc --what=public
 
 ### Publicera
 
-Vid det här laget kan vi proceduren.
+Vid det här laget kan vi proceduren:
 
 ```console
 $ dbwebb publish public
