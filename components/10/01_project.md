@@ -23,7 +23,7 @@ Exempel 3: Deltest 1, 2 och 5 är grundkrav. Deltest 3 och 4 blir optionella.
 Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg som består av:
 
 1. Deltest 1, 2 och minst ett av deltesten 3, 4 eller 5.
-2. Genererad dokumentation. Dubbelkolla så den finns publicerad och strukturerad så det går att se vilken dokumentation som hör till projektet.
+2. Genererad dokumentation. Dubbelkolla så den finns publicerad och strukturerad så det går att se vilken dokumentation som hör till projektet via namespace "kmom10".
 3. All kod ska validera.
 
 Spara filerna i katalogen `public/`. Börja likt tidigare med en startfil, `kmom10.html` som läser in filen `js/kmom10.js`. Skapa modulerna du använder i en mapp `js/modules/kmom10/`.
@@ -33,7 +33,7 @@ Strukturera din kod i en eller flera ES moduler. Fundera igenom hur du vill stru
 Varje del-test skall kunna nollställas och startas om. Det är en fusk-funktion som låter användaren göra om del-testet för att få bättre resultat. Det ska gå att köra `window.reset()` i konsolen i webbläsaren för att starta om deltestet.
 
 
-### Deltest 4, 5, 6: Optionellt
+### Deltest 4, 5: Optionellt
 
 Välj att göra ett eller två ytterligare deltester. Välj de som du ännu inte gjort av deltest 3, 4 och 5.
 
